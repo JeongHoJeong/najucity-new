@@ -1,6 +1,6 @@
 import React from 'react';
 
-TextGroup = React.createClass({
+const TextGroup = React.createClass({
   propTypes: {
     title: React.PropTypes.string.isRequired,
     oneLine: React.PropTypes.bool,
@@ -32,3 +32,5 @@ TextGroup = React.createClass({
     );
   }
 });
+
+export default TextGroup;

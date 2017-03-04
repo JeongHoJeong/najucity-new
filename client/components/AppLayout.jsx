@@ -1,7 +1,9 @@
 import React from 'react';
 
-AppLayout = React.createClass({
+const AppLayout = React.createClass({
   render() {
     return this.props.children;
   }
 });
+
+export default AppLayout;

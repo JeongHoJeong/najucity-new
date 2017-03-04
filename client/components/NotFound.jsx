@@ -1,6 +1,6 @@
 import React from 'react';
 
-NotFound = React.createClass({
+const NotFound = React.createClass({
   render() {
     return (
       <div>
@@ -9,3 +9,5 @@ NotFound = React.createClass({
     );
   }
 });
+
+export default NotFound;

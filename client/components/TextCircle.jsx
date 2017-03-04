@@ -1,6 +1,6 @@
 import React from 'react';
 
-TextCircle = React.createClass({
+const TextCircle = React.createClass({
   propTypes: {
     text: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
     orange: React.PropTypes.bool
@@ -39,3 +39,5 @@ TextCircle = React.createClass({
     );
   }
 });
+
+export default TextCircle;

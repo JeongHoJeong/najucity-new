@@ -1,6 +1,9 @@
 import React from 'react';
+import Header from 'subpage/Header'
+import Sidebar from 'subpage/Sidebar'
+import Footer from 'Footer'
 
-Subpage = React.createClass({
+const Subpage = React.createClass({
   componentDidMount() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   },
@@ -24,3 +27,5 @@ Subpage = React.createClass({
     );
   }
 });
+
+export default Subpage;

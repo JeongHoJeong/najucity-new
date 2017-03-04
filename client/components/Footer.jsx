@@ -1,4 +1,6 @@
-Footer = React.createClass({
+import React from 'react';
+
+const Footer = React.createClass({
   render() {
     return (
       <div
@@ -21,3 +23,5 @@ Footer = React.createClass({
     );
   }
 });
+
+export default Footer;
