@@ -45,7 +45,9 @@ a {
 
 .main-page {
   &>.section {
+    position: relative;
     width: 100%;
+    overflow: hidden;
 
     &.hero {
       background-image: url("/images/background.jpg");
@@ -245,7 +247,11 @@ a {
         }
 
         &>.card-list {
-          position: relative;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 60%;
+          transform: translateY(-50%);
 
           & > .card {
             position: relative;
