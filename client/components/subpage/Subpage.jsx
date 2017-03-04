@@ -28,4 +28,4 @@ const Subpage = React.createClass({
   }
 });
 
-export default Subpage;
+export default Subpage

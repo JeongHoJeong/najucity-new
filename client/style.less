@@ -460,57 +460,38 @@ a {
       }
 
       &.contact-us {
-        position: relative;
-
         & > .title {
-          font-size: 50px;
-          margin-top: 15px;
-          margin-bottom: 60px;
-          font-weight: 600;
-          letter-spacing: 0.2em;
+          margin-top: 40px;
+          margin-bottom: 47px;
 
-          .cabin
+          & > .contact-us {
+            font-family: "Cabin", sans-serif;
+            font-size: 44px;
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+          }
+
+          & > .subtitle {
+            font-size: 23px;
+            font-weight: 600;
+          }
         }
 
-        & > .qa {
-          margin-left: 20px;
+        & > .map {
+          width: 415px;
+          height: 310px;
+          margin: auto;
           margin-bottom: 40px;
+          background-color: @gray;
+        }
 
-          & > .line {
-            position: relative;
-            text-align: left;
-            margin-bottom: 20px;
+        & > .info {
+          font-family: "Nanum Barun Gothic", sans-serif;
+          font-size: 18px;
 
-            @prefix-width: 55px;
-
-            & > .prefix {
-              position: absolute;
-              width: @prefix-width;
-              text-align: center;
-              top: 50%;
-              transform: translateY(-50%);
-              line-height: 100%;
-              display: inline-block;
-              font-size: 25px;
-              font-weight: 600;
-
-              &.a {
-                font-weight: 400;
-                transform: none;
-                top: 0;
-              }
-            }
-
-            & > .content {
-              display: inline-block;
-              margin-left: @prefix-width;
-              width: 600px;
-              font-size: 14px;
-
-              &.q {
-                font-weight: 600;
-              }
-            }
+          & > div {
+            margin-bottom: 8px;
           }
         }
       }

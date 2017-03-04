@@ -1,6 +1,7 @@
 import React from 'react';
+import Section from 'main-page/Section'
 
-Subsection = React.createClass({
+const Subsection = React.createClass({
   propTypes: {
     id: React.PropTypes.string.isRequired
   },
@@ -16,3 +17,5 @@ Subsection = React.createClass({
     );
   }
 });
+
+export default Subsection

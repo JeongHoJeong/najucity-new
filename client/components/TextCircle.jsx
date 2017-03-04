@@ -40,4 +40,4 @@ const TextCircle = React.createClass({
   }
 });
 
-export default TextCircle;
+export default TextCircle

@@ -33,4 +33,4 @@ const TextGroup = React.createClass({
   }
 });
 
-export default TextGroup;
+export default TextGroup

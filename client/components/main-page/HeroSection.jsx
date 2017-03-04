@@ -1,7 +1,8 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
+import Section from 'main-page/Section'
 
-HeroSection = React.createClass({
+const HeroSection = React.createClass({
   render() {
     return (
       <Section
@@ -120,10 +121,6 @@ const Menubar = React.createClass({
         className='menubar'
       >
         <Menubar.Menu
-          text='시상 내역'
-          link='/#award'
-        />
-        <Menubar.Menu
           text='대회 일정'
           link='/#schedule'
         />
@@ -161,3 +158,5 @@ Menubar.Menu = React.createClass({
     );
   }
 });
+
+export default HeroSection

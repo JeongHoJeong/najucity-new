@@ -1,7 +1,8 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
+import Subsection from 'main-page/Subsection'
 
-MainSection = React.createClass({
+const MainSection = React.createClass({
   render() {
     return (
       <Subsection
@@ -165,3 +166,5 @@ const Card = React.createClass({
     );
   }
 });
+
+export default MainSection

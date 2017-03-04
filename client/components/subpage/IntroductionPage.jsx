@@ -1,7 +1,9 @@
 import React from 'react';
 
-IntroductionPage = React.createClass({
+const IntroductionPage = React.createClass({
   render() {
     return this.props.children;
   }
 });
+
+export default IntroductionPage

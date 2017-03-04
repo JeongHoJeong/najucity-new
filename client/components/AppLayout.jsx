@@ -6,4 +6,4 @@ const AppLayout = React.createClass({
   }
 });
 
-export default AppLayout;
+export default AppLayout

@@ -1,6 +1,8 @@
 import React from 'react';
+import Content from 'subpage/Content'
+import TextGroup from 'subpage/TextGroup'
 
-EvaluationPage = React.createClass({
+const EvaluationPage = React.createClass({
   tableContents: [
     ['창의성', '(30)', ['작품의 우수성과 함께 출품자 학력 수준에서의 창의성 반영', '아이디어의 독창성', '문제해결을 위한 접근방법 및 접근과정에서의 창의성']],
     ['이론적 타당성', '(30)', ['작품의 목적, 과정, 결론의 명확성 여부', '작품의 뒷받침하는 자료와 결론의 확실한 제시']],
@@ -90,3 +92,5 @@ const TableRow = React.createClass({
     );
   }
 });
+
+export default EvaluationPage

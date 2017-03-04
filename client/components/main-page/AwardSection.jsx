@@ -1,4 +1,7 @@
-AwardSection = React.createClass({
+import React from 'react'
+import Subsection from 'main-page/Subsection'
+
+const AwardSection = React.createClass({
   render() {
     return (
       <Subsection
@@ -17,3 +20,5 @@ AwardSection = React.createClass({
     );
   }
 });
+
+export default AwardSection

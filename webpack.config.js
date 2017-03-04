@@ -9,7 +9,13 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    modules: ['node_modules', process.env.NODE_PATH]
+    modules: [
+      path.resolve(__dirname, 'client/components'),
+      path.resolve(__dirname, 'client'),
+      'node_modules',
+      process.env.NODE_PATH
+    ],
+    extensions: ['.jsx', '.js']
   },
   resolveLoader: {
     modules: ['node_modules', process.env.NODE_PATH]

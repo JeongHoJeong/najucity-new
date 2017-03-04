@@ -1,6 +1,8 @@
 import React from 'react';
+import Content from 'subpage/Content'
+import TextGroup from 'subpage/TextGroup'
 
-OverviewPage = React.createClass({
+const OverviewPage = React.createClass({
   render() {
     return (
       <Content
@@ -59,3 +61,5 @@ OverviewPage = React.createClass({
     );
   }
 });
+
+export default OverviewPage

@@ -1,6 +1,7 @@
 import React from 'react';
+import Subsection from 'main-page/Subsection'
 
-ScheduleSection = React.createClass({
+const ScheduleSection = React.createClass({
   table: [
     ['1차 신청', '7.15(금)~7.22(금) 18:00'],
     ['사전 워크숍', '7.24(일) 13:00~17:00'],
@@ -72,3 +73,5 @@ ScheduleSection.Row = React.createClass({
     );
   }
 });
+
+export default ScheduleSection

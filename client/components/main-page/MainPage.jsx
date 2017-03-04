@@ -1,5 +1,9 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
+import HeroSection from 'main-page/HeroSection'
+import MainSection from 'main-page/MainSection'
+import ScheduleSection from 'main-page/ScheduleSection'
+import ContactUsSection from 'main-page/ContactUsSection'
 
 function scrollIntoView(eleID) {
   var e = document.getElementById(eleID);
@@ -8,7 +12,7 @@ function scrollIntoView(eleID) {
   }
 }
 
-MainPage = React.createClass({
+const MainPage = React.createClass({
   getInitialState() {
     return {
       currentPath: window.location.pathname
@@ -29,8 +33,6 @@ MainPage = React.createClass({
 
   componentWillUnmount() {
     if (this.pathChangeListener) {
-      //console.log(this.pathChangeListener);
-
       this.pathChangeListener();
       this.pathChangeListener = null;
     }
@@ -53,12 +55,12 @@ MainPage = React.createClass({
         className='main-page'
       >
         <HeroSection />
-        <AwardSection />
         <MainSection />
         <ScheduleSection />
         <ContactUsSection />
-        <Footer />
       </div>
     );
   }
 });
+
+export default MainPage

@@ -1,6 +1,8 @@
 import React from 'react';
+import Content from 'subpage/Content'
+import TextCircle from 'TextCircle'
 
-ImportancePage = React.createClass({
+const ImportancePage = React.createClass({
   render() {
     return (
       <Content
@@ -25,3 +27,5 @@ ImportancePage = React.createClass({
     );
   }
 });
+
+export default ImportancePage

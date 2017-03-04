@@ -1,6 +1,7 @@
 import React from 'react';
+import Content from 'subpage/Content'
 
-CategoriesPage = React.createClass({
+const CategoriesPage = React.createClass({
   render() {
     return (
       <Content
@@ -117,3 +118,5 @@ CategoriesPage = React.createClass({
     );
   }
 });
+
+export default CategoriesPage

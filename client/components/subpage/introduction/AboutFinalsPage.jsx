@@ -1,6 +1,8 @@
 import React from 'react';
+import Content from 'subpage/Content'
+import TextGroup from 'subpage/TextGroup'
 
-AboutFinalsPage = React.createClass({
+const AboutFinalsPage = React.createClass({
   render() {
     return (
       <Content
@@ -96,3 +98,5 @@ const Attachment = React.createClass({
     );
   }
 });
+
+export default AboutFinalsPage

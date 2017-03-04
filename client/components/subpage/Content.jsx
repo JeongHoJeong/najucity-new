@@ -1,6 +1,6 @@
 import React from 'react';
 
-Content = React.createClass({
+const Content = React.createClass({
   getDefaultProps() {
     return {
       className: ''
@@ -27,3 +27,5 @@ Content = React.createClass({
     );
   }
 });
+
+export default Content

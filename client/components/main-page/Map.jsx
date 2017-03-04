@@ -1,6 +1,8 @@
+import React from 'react'
 import { browserHistory } from 'react-router';
 
-GoogleMapLoaded = false;
+let GoogleMapLoaded = false;
+let map = null;
 
 function fromLatLngToPoint(latLng, map) {
   var topRight = map.getProjection().fromLatLngToPoint(map.getBounds().getNorthEast());
@@ -10,7 +12,7 @@ function fromLatLngToPoint(latLng, map) {
   return new google.maps.Point((worldPoint.x - bottomLeft.x) * scale, (worldPoint.y - topRight.y) * scale);
 }
 
-Map = React.createClass({
+const Map = React.createClass({
   getInitialState() {
     return {
       isMapReady: false
@@ -94,3 +96,5 @@ Map = React.createClass({
     );
   }
 });
+
+export default Map

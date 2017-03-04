@@ -1,6 +1,8 @@
 import React from 'react';
+import Content from 'subpage/Content'
+import TextGroup from 'subpage/TextGroup'
 
-WorkshopPage = React.createClass({
+const WorkshopPage = React.createClass({
   render() {
     return (
       <Content
@@ -112,3 +114,5 @@ WorkshopPage = React.createClass({
     );
   }
 });
+
+export default WorkshopPage

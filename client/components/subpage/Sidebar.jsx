@@ -1,7 +1,7 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
 
-Sidebar = React.createClass({
+const Sidebar = React.createClass({
   propTypes: {
     pathname: React.PropTypes.string
   },
@@ -194,3 +194,5 @@ Sidebar.Menu.Item.Subitem = React.createClass({
     );
   }
 });
+
+export default Sidebar

@@ -1,7 +1,7 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
 
-Header = React.createClass({
+const Header = React.createClass({
   render() {
     return (
       <div
@@ -107,3 +107,5 @@ Header.Menubar.Menu = React.createClass({
     );
   }
 });
+
+export default Header

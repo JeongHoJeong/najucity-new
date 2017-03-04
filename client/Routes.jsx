@@ -1,5 +1,19 @@
 import React from 'react';
 import { Router, Route, Link, IndexRoute, IndexRedirect, browserHistory } from 'react-router';
+import AppLayout from 'AppLayout'
+import MainPage from 'main-page/MainPage'
+import Subpage from 'subpage/Subpage'
+import ScheduleSection from 'main-page/ScheduleSection'
+import IntroductionPage from 'subpage/IntroductionPage'
+import OverviewPage from 'subpage/introduction/OverviewPage'
+import CategoriesPage from 'subpage/introduction/Categories'
+import AboutFinalsPage from 'subpage/introduction/AboutFinalsPage'
+import WorkshopPage from 'subpage/introduction/WorkshopPage'
+import EvaluationPage from 'subpage/introduction/EvaluationPage'
+import AwardsPage from 'subpage/introduction/Awards'
+import ImportancePage from 'subpage/ImportancePage'
+import ApplicationPage from 'subpage/ApplicationPage'
+import NotFound from 'NotFound'
 
 const Routes = React.createClass({
   render() {
@@ -72,10 +86,4 @@ const Routes = React.createClass({
   }
 });
 
-Meteor.startup(function() {
-  const root = document.createElement('div');
-  root.setAttribute('id', 'root');
-  document.body.appendChild(root);
-
-  ReactDOM.render(<Routes/>, root);
-});
+export default Routes

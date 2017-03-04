@@ -1,6 +1,8 @@
 import React from 'react';
+import Content from 'subpage/Content'
+import TextGroup from 'subpage/TextGroup'
 
-AwardsPage = React.createClass({
+const AwardsPage = React.createClass({
   render() {
     return (
       <Content
@@ -169,3 +171,5 @@ AwardsPage = React.createClass({
     );
   }
 });
+
+export default AwardsPage

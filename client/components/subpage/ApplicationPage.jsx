@@ -1,6 +1,7 @@
 import React from 'react';
+import Content from 'subpage/Content'
 
-ApplicationPage = React.createClass({
+const ApplicationPage = React.createClass({
   render() {
     return (
       <Content
@@ -39,3 +40,5 @@ ApplicationPage = React.createClass({
     );
   }
 });
+
+export default ApplicationPage

@@ -1,6 +1,6 @@
 import React from 'react';
 
-Section = React.createClass({
+const Section = React.createClass({
   propTypes: {
     className: React.PropTypes.string,
     id: React.PropTypes.string.isRequired
@@ -23,3 +23,5 @@ Section = React.createClass({
     );
   }
 });
+
+export default Section
